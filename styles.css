@@ -31,9 +31,8 @@ h3 {
   margin-bottom: 1em;
 }
 h4 {
-  font-size: 1.2em;
-  line-height: 1.25;
-  margin-bottom: 1.25em;
+  font-size: 1em;
+  margin-bottom: 1em;
 }
 h5 {
   font-size: 1em;
@@ -65,7 +64,7 @@ nav {
 
 /* end of others */
 
-/* about section */
+/* about and services section */
 .container {
   display: flex;
   flex-direction: row;
@@ -117,3 +116,63 @@ p {
     text-align: center;
   }
 }
+/* end of about and services section */
+
+/* contact and lower section */
+.contact {
+  background: var(--secondaryColor);
+  padding-top: 1em;
+  color: var(--primaryBlack);
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 2em;
+    margin: auto;
+}
+ol, ul, li {
+    list-style: none;
+    text-align: start;
+}
+a {
+    text-decoration: none;
+    pointer: cursor;
+    color: var(--primaryBlack);
+}
+footer {
+    text-align: center;
+    background: var(--secondaryColor);
+}
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        /* align-items: center; */
+    }
+}
+
+.icon-cop {
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
+  margin-right: 0.5em;
+}
+i {
+  margin-right: 0.5em;
+}
+.small {
+  display: flex;
+  flex-direction: row;
+  margin-left: 2em;
+}
+.small-logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 0.5em;
+}
+.list-items {
+  margin-bottom: 5px;
+}
+/* end of contact section */
