@@ -50,7 +50,7 @@ h6 {
 /* header */
 /* navbar */
 nav {
-  background: red;
+  background: var(--secondaryColor);
   padding: 2px;
 }
 /* Navbar */
@@ -114,5 +114,6 @@ p {
   }
   .item {
     flex: 100%;
+    text-align: center;
   }
 }
