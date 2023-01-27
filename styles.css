@@ -7,7 +7,7 @@
   --primaryBg: #e9f6ff;
   --primaryColor: #123c66;
   --primaryBlack: #000000;
-  --secondaryColor: #e9f6ff;
+  --secondaryColor: #f48b5c;
   --mainGrey: #ececec;
   --radius: 3px;
   --spacing: 3px;
@@ -60,6 +60,7 @@ nav {
 .title {
   text-align: center;
   margin-top: 1rem;
+  color: var(--secondaryColor)
 }
 
 /* end of others */
@@ -72,13 +73,13 @@ nav {
   justify-content: center;
   align-items: center;
   margin: auto;
-  padding: 2px;
+  padding: 7px;
 }
 .item {
   text-align: start;
   border-radius: 5px;
-  margin: 1px;
-  padding: 2px;
+  margin: 10px;
+  padding: 7px;
   height: 300px;
   width: 500px;
   line-height: 300px;
@@ -86,6 +87,13 @@ nav {
 .image {
   display: flex;
   justify-content: center;
+}
+.about-img {
+  display: flex;
+  justify-content: center;
+}
+.text {
+  text-align: center;
 }
 img {
   border-radius: 3px;
@@ -95,11 +103,11 @@ p {
   display: inline-block;
   vertical-align: middle;
 }
-@media (max-width: 800px) {
+@media (max-width: 600px) {
   .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 1px;
+    padding: 3px;
   }
   .logo {
     width: 100%;
