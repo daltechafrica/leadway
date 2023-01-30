@@ -6,37 +6,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LEADWAY TECHNOLOGIES</title>
 
-    <!-- TODO: add favicons -->
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
+    <!-- styling sheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- icons -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
 </head>
 <body>
-    <header>
-        <nav>
-            <h1>Leadway</h1>
+    <header id="home">
+        <nav class="navbar">
+            <div class="small-nav">
+                <span><img class="small-nav-logo" src="images/logo.jpg"></span>
+                <h4>Leadway Technologies</h4>
+            </div>
+            <ul class="nav-links">
+                <input type="checkbox" name="checkbox_toggle" id="checkbox_toggle">
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        
+                <div class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
+            </ul>
         </nav>
+
+        <div class="banner">
+            <div class="banner-container">
+                <h1>World Class Software Service</h1>
+                <p>
+                    Scale your business, enterprise or personal activities with our 
+                    top notch services. Affordable services. Quick response. Personalized customer
+                    service.
+                </p>
+                <br>
+                <a href="#services" class="btn btn-white">explore services</a>
+            </div>
+        </div>
     </header>
+
     <main>
-        <section id="about" class="section">
+        <!-- About section -->
+        <section id="about" class="section about">
             <h2 class="title">
                 About us
             </h2>
-            <div class="container about">
-                <article class="item image">
-                    <img class="logo" src="images/logo.jpg" alt="logo">
-                </article>
-                <article class="item">
+            <div class="container">
+                <article class="item text">
                     <p class="about-text">
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Rem impedit et nulla quo aliquid ullam voluptas. Earum optio minima eum nisi,
-                        hic adipisci illum quaerat, et quae ea voluptatem mollitia id vero aperiam error!
-                        Nostrum placeat, molestias autem, incidunt quod soluta, doloremque dolores aut iusto mollitia
-                        expedita quaerat voluptatem quas?
+                        We are a Software and Technology based in Kenya, East Africa aimed at
+                        providing solutions to companies, businesses and personal activities. Our
+                        services meet the required standards and affordable. We are accessible 24/7.
+                        Our headquaters are located in Nairobi.
                     </p>
                 </article>
+                <article class="item about-img">
+                    <img class="logo" src="images/team.svg" alt="logo">
+                </article>
+            </div>
+        </section>
+
+        <!-- Services section -->
+        <section id="services" class="section services">
+            <h2 class="title">
+                Our Services
+            </h2>
+            <div class="container">
+                <div class="item image">
+                    <img class="logo" src="images/cloud2.svg">
+                </div>
+                <div class="item">
+                    <p>
+                        <strong>Cloud & Onpremise Solutions</strong><br>
+                        Accessible and available for all your Information Technology
+                        need. We offer the following cloud computing services: Infrastructure
+                        as a Service, Platform as a Service and Software as a Service. Database setup
+                        and onsite storage solutions are also offered.
+                    </p>
+                    <hr class="inline-hr">
+                </div>
             </div>
 
+            <div class="container">
+                <div class="item image">
+                    <img class="logo" src="images/cyber.svg">
+                </div>
+                <div class="item">
+                    <p>
+                        <strong>Cyber Security Solutions</strong><br>
+                        Our security solutions are designed for both large scale and small scale
+                        businesses. We have a team of cyber security consultants ready to assist
+                        and set up your firm's security. Penetration testing, breach detection, and
+                        fast response are some of our key security services.
+                    </p>
+                    <hr class="inline-hr">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="item image">
+                    <img class="logo" src="images/data.svg">
+                </div>
+                <div class="item">
+                    <p>
+                        <strong>Data Center Solutions</strong><br>
+                        We know you value your data and we are here to ensure that it is well
+                        stored, secured and easily accessible. Our engineers are able to set up
+                        your computer systems and telecommunication systems ensuring that they
+                        run all through with no interruptions.
+                    </p>
+                    <hr class="inline-hr">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="item image">
+                    <img class="logo" src="images/cable.svg">
+                </div>
+                <div class="item">
+                    <p>
+                        <strong>Cabling & Infrastructure</strong><br>
+                        Our engineers are well skilled and qualified to set up your
+                        business wiring system and infrastructure meeting the required standards.
+                        Our services are affordable and accessible.
+                    </p>
+                    <hr class="inline-hr">
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="item image">
+                    <img class="logo" src="images/teach.svg">
+                </div>
+                <div class="item">
+                    <p>
+                        <strong>Training</strong><br>
+                        We offer different training programmes in our firm. They include:
+                        Web Development Training, Cyber Security Classes, Cloud Computing Classes
+                        and Data Management. The classes are affordable.
+                    </p>
+                </div>
+            </div>
         </section>
+
+        <section id="contact" class="section contact">
+            <div class="small">
+                <span><img class="small-logo" src="images/logo.jpg"></span><h2>Leadway Technologies</h2>
+            </div>
+            <div class="grid-container">
+                <div class="summary">
+                    <h4>LINKS</h4>
+                    <li class="list-items"><a href="#about">About</a></li>
+                    <li class="list-items"><a href="#services">Services</a></li>
+                </div>
+                
+                <div class="partners">
+                    <h4>PARTNERS</h4>
+                    <li class="list-items"><a><span><img class="icon-cop" src="images/cisco.png"></span>Cisco</a></li>
+                    <li class="list-items"><a><span><img class="icon-cop" src="images/windows.png"></span>Microsoft</a></li>
+                    <li class="list-items"><a><span><img class="icon-cop" src="images/ubiquiti.png"></span>Ubiquiti</a></li>
+                    <li class="list-items"><a><span><img class="icon-cop" src="images/fortnite.jpeg"></span>Fortnite</a></li>
+                    <li class="list-items"><a><span><img class="icon-cop" src="images/vertiv.png"></span>Vertiv</a></li>
+                    <li class="list-items"><a><span><img class="icon-cop" src="images/checkpoint.jpeg"></span>Checkpoint</a></li>
+                </div>
+
+                <div class="contact">
+                    <h4>REACH US</h4>
+                    <li class="list-items"><a href="mailto"><span><i class="fi fi-sr-envelope"></i></span>info@leadwaytech.co.ke</a></li>
+                    <li class="list-items"><a href="tel"><span><i class="fi fi-sr-phone-call"></i></span>+254778231472</a></li>
+                    <li class="list-items"><span><i class="fi fi-sr-mailbox"></i></span>PO Box: 43615-00100</li>
+                    <li class="list-items"><a href="https://goo.gl/maps/iaejTFwrg9Bk82xT8"><span><i class="fi fi-sr-marker"></i></span>OneAfrica 3rd floor Westlands, Nairobi Kenya</a></li>
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <p>
+                Bugs Africa LLC
+            </p>
+        </footer>
     </main>
 </body>
 </html>
